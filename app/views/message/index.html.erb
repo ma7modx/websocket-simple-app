@@ -1,0 +1,22 @@
+<h1>Message#index</h1>
+<p>Find me in app/views/message/index.html.erb</p>
+
+<script type="text/javascript">
+
+
+  var task = {
+  name: 'Start taking advantage of WebSockets',
+  completed: false
+  }
+alert("sending")
+var dispatcher = new WebSocketRails('localhost:3001/websocket');
+console.log(dispatcher)
+var success = function(task) { console.log("Created: " + task.name); }
+
+var failure = function(task) {
+  console.log("Failed to create Product: " + product.name)
+}
+
+dispatcher.trigger('tasks.create', task, success, failure);
+dispatcher.trigger('task.create', task, success, failure);
+</script>
