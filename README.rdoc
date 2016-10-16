@@ -1,2 +1,2 @@
-# websocket-simple-app
+websocket-simple-app
 Simple websocket application on Ruby on Rails using 'websocket' gem
